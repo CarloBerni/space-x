@@ -76,7 +76,7 @@ body {
   background: radial-gradient(transparent, black);
 }
 
-.top img {
+.satellite img {
   margin-left: 800px;
   margin-top: -150px;
   width: 900px;
@@ -139,8 +139,8 @@ body {
 }
 
 .circle--2 {
-  right: 160px;
-  top: 860px;
+  right: 75px;
+  top: 875px;
 }
 
 .circle--3 {
@@ -155,7 +155,11 @@ body {
 
 /*popup*/
 
-.pop-up {
+
+.pop-up path {
+  fill: black;
+}
+.one {
   position: relative;
   top: 200px;
   left: 40px;
@@ -173,7 +177,7 @@ body {
 .test {
   position: relative;
   width: 240px;
-  color: white;
+  color: black;
   top: -708px;
   left: 30px;
   font-size: 1.6em;
@@ -191,4 +195,12 @@ body {
 .test img {
   margin-top: 20px;
   width: 200px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.two {
+  position: absolute;
+  top: 900px;
+  left: 20px;
 }
