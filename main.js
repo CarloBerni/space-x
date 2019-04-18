@@ -3,6 +3,9 @@ var popups = document.querySelectorAll('.pop-up');
 var right = document.querySelector('.right');
 var closes = document.querySelectorAll('.close');
 
+var scroll = document.querySelector('.container_scroll');
+var hideScroll = false;
+
 var positions = [0, 700, 800, 1000];
 var open = false;
 
@@ -36,3 +39,4 @@ for(let i = 0; i < closes.length; i++) {
         popup.classList.remove('activate');
     })
 }
+

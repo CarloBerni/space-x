@@ -219,10 +219,6 @@ body {
   left: 20px;
 }
 
-
-
-
-
 .pop-up {
   transform-origin: top;
   transform: scale(0);
@@ -246,4 +242,51 @@ body {
   transform-origin: bottom;
   top: 1240px;
   left: 36px;
+}
+
+/* Scroll */
+@keyframes scrollingOne {
+  to {
+    transform: translateY(10px);
+  }
+}
+@keyframes scrollingTwo {
+  to {
+    transform: translateY(30px);
+  }
+}
+@keyframes scrollingThree {
+  to {
+    transform: translateY(50px);
+  }
+}
+
+.container_scroll {
+  position: absolute;
+  top: 160px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.7;
+  transition: opacity 1s;
+}
+
+.group {
+  margin-bottom: -25px;
+}
+
+.group--one {
+  animation: scrollingOne 1.5s ease-in-out infinite alternate ;
+}
+
+.group--two {
+  animation: scrollingTwo 1.5s ease-in-out infinite alternate;
+}
+
+.group--three {
+  animation: scrollingThree 1.5s ease-in-out infinite alternate;
+}
+
+.hidden {
+  opacity: 0;
 }
