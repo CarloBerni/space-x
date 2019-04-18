@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "BrandonReg";
+  src: url("../assets/font/Brandon_reg.otf") format("truetype");
+
+  font-family: "BrandonLight";
+  src: url("../assets/font/Brandon_light.otf") format("truetype");
+}
+
+.fillwidth {
+  position: fixed;
+  width: auto;
+  height: 100vh;
+  z-index: -1;
+}
+
+* {
+  position: absolute;
+}
+
+.flag {
+  width: 200px;
+  height: 150px;
+  top: 40px;
+  left: 150px;
+}
+.headphone {
+  width: 200px;
+  height: 150px;
+  top: 40px;
+  left: 400px;
+}
