@@ -40,3 +40,27 @@ for(let i = 0; i < closes.length; i++) {
     })
 }
 
+
+right.addEventListener('wheel', function(event) {
+    if(event.deltaY > 0) {
+        document.querySelector('.container_scroll').classList.add('hidden')
+        state = 1;
+    }
+})
+
+// Enleve la classe du translate quand l'élément est en haut
+/* right.addEventListener('wheel', function(event) {
+    if(event.deltaY < -50 && right.scrollTop === 0 && state === 0) {
+        document.querySelector('container_scroll').classList.remove('hidden');
+
+    } else if(event.deltaY < 0 && document.querySelector(page).scrollTop === 0 && state === 1) {
+        var delay = 1000;
+        event.deltaY = 0;
+        setTimeout(function() {
+            state = 0;
+          }, delay);
+
+    } else if(event.deltaY > 0){
+        state = 1;
+    }
+}); */
