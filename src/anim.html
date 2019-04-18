@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Cité des sciences et de l'industrie</title>
+    <link rel="stylesheet" href="TemplateData/anim.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="shortcut icon" href="./assets/logo__shortcut.png" />
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Buid_Test.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 1275px; height: 720px"></div>
+    </div>
+  </body>
+</html>
