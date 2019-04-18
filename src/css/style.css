@@ -5,3 +5,13 @@
     font-family: 'brandonLight';
         src: url('../assets/font/Brandon_light.otf') format('truetype');
   }
+
+
+/********************** BACKGROUND ***********************/
+
+
+.test {
+    background-color: #010309;
+    width: 100%;
+    height: 100%;
+}
