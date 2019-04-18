@@ -219,6 +219,10 @@ body {
   left: 20px;
 }
 
+
+
+
+
 .pop-up {
   transform-origin: top;
   transform: scale(0);
@@ -228,4 +232,18 @@ body {
 .activate {
   transform: scale(1);
   transition: transform 0.5s;
+}
+
+.three {
+  transform-origin: bottom;
+  position: absolute;
+  top: 960px;
+  left: 30px;
+}
+
+.four {
+  position: absolute;
+  transform-origin: bottom;
+  top: 1240px;
+  left: 36px;
 }

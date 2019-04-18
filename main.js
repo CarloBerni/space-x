@@ -3,7 +3,7 @@ var popups = document.querySelectorAll('.pop-up');
 var right = document.querySelector('.right');
 var closes = document.querySelectorAll('.close');
 
-var positions = [0, 700, 800, 800];
+var positions = [0, 700, 800, 1000];
 var open = false;
 
 for(let i=0; i < circles.length; i++) {
