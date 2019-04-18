@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "BrandonReg";
+    src: url('../assets/font/Brandon_reg.otf') format('truetype');
+
+    font-family: "BrandonLight";
+    src: url('../assets/font/Brandon_light.otf') format('truetype')
+  }
