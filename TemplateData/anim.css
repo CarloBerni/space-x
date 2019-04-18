@@ -1,6 +1,10 @@
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: "BrandonReg";
+  src: url("../assets/font/Brandon_reg.otf") format("truetype");
+}
+
+  @font-face {font-family: "BrandonLight";
+  src: url("../assets/font/Brandon_light.otf") format("truetype");
 }
 
 @keyframes scaling {
@@ -170,5 +174,21 @@ body {
   position: relative;
   width: 240px;
   color: white;
-  top: -300px;
+  top: -708px;
+  left: 30px;
+  font-size: 1.6em;
+  font-family: BrandonLight;
+  height: 520px;
+  overflow: scroll;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 16px;
+}
+
+.test img {
+  margin-top: 20px;
+  width: 200px;
 }
