@@ -96,6 +96,12 @@ body {
   align-items: center;
 }
 
+.falcon {
+  position: absolute;
+  opacity: 0.4;
+  margin-left: 500px;
+}
+
 
 
 /*Right Part ********************************/
@@ -130,7 +136,8 @@ body {
   border: 3px solid #FF9900;
   box-sizing: border-box;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-  animation: scaling 2s infinite alternate-reverse linear;
+  animation: scaling 1s infinite alternate-reverse linear;
+  z-index: 3;
 }
 
 .circle--1 {
@@ -174,6 +181,13 @@ body {
   left: 20px;
 }
 
+@keyframes shadowing {
+  to{ box-shadow: 0px 0px 10px #0F1522;} 
+}
+.close:active {
+  animation: shadowing 0.2s;
+}
+
 .test {
   position: relative;
   width: 240px;
@@ -203,4 +217,15 @@ body {
   position: absolute;
   top: 900px;
   left: 20px;
+}
+
+.pop-up {
+  transform-origin: top;
+  transform: scale(0);
+  transition: transform 0.5s;
+}
+
+.activate {
+  transform: scale(1);
+  transition: transform 0.5s;
 }
