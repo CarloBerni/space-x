@@ -37,6 +37,10 @@
   }
 }
 
+body {
+  overflow: hidden;
+}
+
 .webgl-content * {
   border: 0;
   margin: 0;
@@ -98,14 +102,131 @@ body {
 
 .falcon {
   position: absolute;
-  opacity: 0.4;
-  margin-left: 500px;
+  margin-left: 400px;
+  margin-top: 60px;
+  width: 500px;
 }
 
+/*Triche*/
 
+.rightAlt {
+  position: absolute;
+  display: none;
+  background-color: #0F1522;
+  right: 0;
+  height: 100%;
+  width: calc(100vw - 1275px);
+  overflow-x: hidden;
+}
+
+.back {
+  position: fixed;
+  color: white;
+  font-family: BrandonLight;
+  margin-left: 20px;
+  margin-top: 23px;
+}
+
+.gallery {
+  width: calc(100vw - 1275px);
+
+  display: grid;
+  grid-template-columns: 180px 180px 180px;
+  grid-column-gap: 2px;
+  overflow-x: scroll;
+  
+}
+
+.rightAlt p {
+  color: white;
+  width: 360px;
+  text-align: center;
+  margin-left: 25px;
+  font-family: BrandonLight;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.ALaunch {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: white;
+  width: 360px;
+  position: fixed;
+  font-family: BrandonLight;
+  font-size: 2.8em;
+  padding-left: 110px;
+
+  overflow: hidden;
+  background-color: #0F1522;
+}
+
+.section.reflight {
+  margin-top: 120px;
+}
+
+.image {
+
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.image--1 {
+  background-image: url('../assets/galerie/Landing1.jpg');
+}
+
+.image--2 {
+  background-image: url('../assets/galerie/Landing2.jpg');
+}
+
+.image--3 {
+  background-image: url('../assets/galerie/Landing3.jpg');
+}
+
+.image--4 {
+  background-image: url('../assets/galerie/Landing4.jpg');
+}
+
+.image--5 {
+  background-image: url('../assets/galerie/Landing5.jpg');
+}
+
+.image--6 {
+  background-image: url('../assets/galerie/Landing6.jpg');
+}
+
+.image--7 {
+  background-image: url('../assets/galerie/Landing7.jpg');
+}
+
+.image--8 {
+  background-image: url('../assets/galerie/Landing8.jpg');
+}
+
+.image--9 {
+  background-image: url('../assets/galerie/Landing9.jpg');
+}
+
+.image--10 {
+  background-image: url('../assets/galerie/Landing10.jpg');
+}
+
+.image--11 {
+  background-image: url('../assets/galerie/Landing11.jpg');
+}
+
+.image--12 {
+  background-image: url('../assets/galerie/Landing12.jpg');
+}
 
 /*Right Part ********************************/
 .right {
+  opacity: 1; /*IM HERE**************************************/
   position: absolute;
   background-color: #0F1522;
   right: 0;
@@ -160,6 +281,56 @@ body {
   top: 1860px;
 }
 
+
+
+.imgSlider {
+  background-image: url('../assets/galerie/Landing10.jpg');
+  background-size: cover;
+  width: 700px;
+  height: 550px;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+.rightArrow {
+  position: absolute;
+  right: 30px;
+}
+
+.leftArrow {
+  position: absolute;
+  left: 30px;
+}
+
+.opac {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0F1522;
+  opacity: 0.8;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.slider {
+  display: none;
+  position: absolute;
+  width: 900px;
+  height: 730px;
+  background-color: #0F1522;
+  left: 27%;
+  top: 13%;
+  z-index: 4;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: BrandonLight;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
 /*popup*/
 
 
@@ -267,7 +438,7 @@ body {
 .container_scroll {
   position: absolute;
   top: 160px;
-  left: 60px;
+  left: 100px;
   display: flex;
   flex-direction: column;
   opacity: 0.7;

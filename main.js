@@ -48,19 +48,30 @@ right.addEventListener('wheel', function(event) {
     }
 })
 
-// Enleve la classe du translate quand l'élément est en haut
-/* right.addEventListener('wheel', function(event) {
-    if(event.deltaY < -50 && right.scrollTop === 0 && state === 0) {
-        document.querySelector('container_scroll').classList.remove('hidden');
+document.querySelector('.image--10').addEventListener('click', function(){
+    document.querySelector('.slider').style.display = 'flex';
+    document.querySelector('.opac').style.display = "initial";
+});
 
-    } else if(event.deltaY < 0 && document.querySelector(page).scrollTop === 0 && state === 1) {
-        var delay = 1000;
-        event.deltaY = 0;
-        setTimeout(function() {
-            state = 0;
-          }, delay);
+document.querySelector('.opac').addEventListener('click', function(){
+    document.querySelector('.slider').style.display = 'none';
+    document.querySelector('.opac').style.display = "none";
+})
 
-    } else if(event.deltaY > 0){
-        state = 1;
+var initial = true;
+window.addEventListener('keypress', function (e) {
+    if(initial) {
+        if (e.keyCode === 32) {
+        document.querySelector('.right').style.opacity = 0;
+        document.querySelector('.rightAlt').style.display = 'flex';
+        initial = false;
+        }
+    } else {
+        if (e.keyCode === 32) {
+            document.querySelector('.right').style.opacity = 1;
+            document.querySelector('.rightAlt').style.display = 'none';
+            initial = true;
+            }
     }
-}); */
+    
+}, false);
