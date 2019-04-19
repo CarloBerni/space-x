@@ -75,3 +75,13 @@ window.addEventListener('keypress', function (e) {
     }
     
 }, false);
+
+let none = () => {
+    var delay = 4800;
+            setTimeout(function() {
+                document.querySelector('.screen').style.display = 'none';
+              }, delay);
+    
+}
+
+none();
